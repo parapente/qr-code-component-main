@@ -1,31 +1,32 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
+import QRCodeComponent from "./components/QRCodeComponent.vue";
 </script>
 
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="./assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
+  <header>QR-Code Component Frontend Mentor Challenge</header>
   <main>
-    <TheWelcome />
+    <QRCodeComponent></QRCodeComponent>
   </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      Coded by <a href="https://github.com/parapente">Theofilos Intzoglou</a>.
+    </div>
+  </footer>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
+  text-align: center;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .logo {
@@ -37,7 +38,6 @@ header {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
   }
 
   .logo {
@@ -49,5 +49,14 @@ header {
     place-items: flex-start;
     flex-wrap: wrap;
   }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 </style>
