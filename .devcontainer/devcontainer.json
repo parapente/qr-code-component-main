@@ -1,0 +1,56 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Ubuntu",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"nodeGypDependencies": true,
+			"version": "latest"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"streetsidesoftware.code-spell-checker",
+				"pranaygp.vscode-css-peek",
+				"mhutchie.git-graph",
+				"GitHub.vscode-pull-request-github",
+				"ecmel.vscode-html-css",
+				"HTMLHint.vscode-htmlhint",
+				"wix.vscode-import-cost",
+				"brunnerh.insert-unicode",
+				"Zignd.html-css-class-completion",
+				"sburg.vscode-javascript-booster",
+				"Tyriar.lorem-ipsum",
+				"yzhang.markdown-all-in-one",
+				"DavidAnson.vscode-markdownlint",
+				"Cardinal90.multi-cursor-case-preserve",
+				"christian-kohler.path-intellisense",
+				"esbenp.prettier-vscode",
+				"sainoba.px-to-rem",
+				"mattpocock.ts-error-translator",
+				"Vue.vscode-typescript-vue-plugin",
+				"Vue.volar",
+				"christian-kohler.npm-intellisense",
+				"TabNine.tabnine-vscode"
+			]
+		}
+	}
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
