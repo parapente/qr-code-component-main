@@ -5,7 +5,10 @@ import QRCodeComponent from "./components/QRCodeComponent.vue";
 <template>
   <header>QR-Code Component Frontend Mentor Challenge</header>
   <main>
-    <QRCodeComponent></QRCodeComponent>
+    <QRCodeComponent>
+      <template #header> This is an example header </template>
+      QR-Code Component Frontend Mentor Challenge
+    </QRCodeComponent>
   </main>
 
   <footer>
